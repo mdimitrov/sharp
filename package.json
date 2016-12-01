@@ -28,7 +28,8 @@
     "F. Orlando Galashan <frulo@gmx.de>",
     "Kleis Auke Wolthuizen <info@kleisauke.nl>",
     "Matt Hirsch <mhirsch@media.mit.edu>",
-    "Matthias Thoemmes <thoemmes@gmail.com>"
+    "Matthias Thoemmes <thoemmes@gmail.com>",
+    "Patrick Paskaris <patrick@paskaris.gr>"
   ],
   "scripts": {
     "clean": "rm -rf node_modules/ build/ vendor/ coverage/ test/fixtures/output.*",
@@ -37,7 +38,8 @@
     "test-packaging": "./packaging/test-linux-x64.sh",
     "docs": "for m in constructor input resize composite operation colour channel output utility; do documentation build --shallow --format=md lib/$m.js >docs/api-$m.md; done"
   },
-  "main": "lib/",
+  "main": "lib/index.js",
+  "types": "lib/types.d.ts",
   "repository": {
     "type": "git",
     "url": "git://github.com/lovell/sharp"
@@ -60,21 +62,21 @@
   "dependencies": {
     "caw": "^2.0.0",
     "color": "^0.11.3",
-    "got": "^6.6.0",
+    "got": "^6.6.3",
     "nan": "^2.4.0",
     "semver": "^5.3.0",
     "tar": "^2.2.1"
   },
   "devDependencies": {
-    "async": "^2.1.2",
-    "bufferutil": "^1.2.1",
+    "async": "^2.1.4",
+    "bufferutil": "^1.3.0",
     "cross-env": "^3.1.3",
-    "documentation": "^4.0.0-beta11",
+    "documentation": "^4.0.0-beta15",
     "exif-reader": "^1.0.1",
     "icc": "^0.0.2",
-    "mocha": "^3.1.2",
+    "mocha": "^3.2.0",
     "node-cpplint": "^0.4.0",
-    "nyc": "^8.4.0",
+    "nyc": "^10.0.0",
     "rimraf": "^2.5.4",
     "semistandard": "^9.1.0",
     "unzip": "^0.1.11"

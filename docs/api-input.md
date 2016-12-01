@@ -38,7 +38,7 @@ A Promises/A+ promise is returned when `callback` is not provided.
 
 **Parameters**
 
--   `callback` **\[[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)]** called with the arguments `(err, metadata)`
+-   `callback` **[Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)?** called with the arguments `(err, metadata)`
 
 **Examples**
 
@@ -57,7 +57,7 @@ image
   });
 ```
 
-Returns **([Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise) | Sharp)** 
+Returns **([Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)&lt;[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)> | Sharp)** 
 
 # limitInputPixels
 
@@ -81,6 +81,6 @@ This will reduce memory usage and can improve performance on some systems.
 
 **Parameters**
 
--   `sequentialRead` **\[[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)]**  (optional, default `true`)
+-   `sequentialRead` **[Boolean](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)?**  (optional, default `true`)
 
 Returns **Sharp** 

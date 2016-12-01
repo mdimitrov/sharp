@@ -15,12 +15,22 @@ Requires libvips v8.4.2.
   Access to these is now via output format functions, for example `quality(n)`
     is now `jpeg({quality: n})` and/or `webp({quality: n})`.
 
+* Autoconvert GIF and SVG input to PNG output if no other format is specified.
+
 * Expose libvips' "centre" resize option to mimic \*magick's +0.5px convention.
   [#568](https://github.com/lovell/sharp/issues/568)
 
 * Ensure support for embedded base64 PNG and JPEG images within an SVG.
   [#601](https://github.com/lovell/sharp/issues/601)
   [@dynamite-ready](https://github.com/dynamite-ready)
+
+* Add support for PNG and WebP tile-based output formats (in addition to JPEG).
+  [#622](https://github.com/lovell/sharp/pull/622)
+  [@ppaskaris](https://github.com/ppaskaris)
+
+* Allow use of extend with greyscale input.
+  [#623](https://github.com/lovell/sharp/pull/623)
+  [@ppaskaris](https://github.com/ppaskaris)
 
 ### v0.16 - "*pencil*"
 
